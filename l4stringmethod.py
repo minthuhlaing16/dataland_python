@@ -170,3 +170,10 @@ print(
 user = {"name": "aung aung", "age": 32, "isMale": True}
 greet = "Hello {name} , you are {age} years old."
 print(greet.format_map(user))
+
+
+print("hello {},How old are you? I am {} years old.".format("John", 34))
+
+val1 = "Alice"
+val2 = 0
+print("hi My name is {}, My fav number is {}".format(val1, val2))
