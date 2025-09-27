@@ -133,3 +133,24 @@ print(numbers)  # [1, 2, 4, [5, 6, 7, [8, 9, 10]], [200, 300, 400]]
 
 numbers.pop(1)
 print(numbers)  # [1, 4, [5, 6, 7, [8, 9, 10]], [200, 300, 400]]
+
+
+ages = [2, 11, 34, 56, 78, 22, 22, 11, 67, 11]
+
+print(ages.count(11))  # 3
+
+print(ages.index(11))  # 1 ==> value pay pee index shar tar
+
+
+greeting = ["hello", "susu"]
+
+print(greeting)  # ['hello', 'susu']
+print(" ".join(greeting))  # hello susu
+print(" - ".join(greeting))  # hello - susu
+
+
+# list unpacking
+val1, val2 = greeting
+
+print(val1)
+print(val2)
