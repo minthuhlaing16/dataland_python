@@ -95,3 +95,31 @@ person = {"name": "aung aung", "age": 23, "gender": "Male", "is_student": True}
 
 print(person)
 print(type(person))  # <class 'dict'>
+
+
+# nested if statement
+initnum = -1
+
+if initnum > 0:
+    print("The init number is positive.")
+    if initnum % 2 == 0:
+        print("The init number is even.")
+    else:
+        print("The init number is odd.")
+else:
+    print("The init number is negative.")
+
+
+# Ternary conditional operator
+# true if condition else false
+
+initidx = 5
+result = "Positive Idx" if initidx > 0 else "Negative Idx"
+print("Init idx is: " + result)
+
+result = "Even Idx" if initidx % 2 == 0 else "Odd Idx"
+print("Init idx is: " + result)
+
+gamestatus = True
+gameresult = "Green Color" if gamestatus == True else "Red Color"
+print(gameresult)
