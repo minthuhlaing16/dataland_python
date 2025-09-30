@@ -121,11 +121,26 @@ helloworld = lambda: "hello world! how are you? I am Bob..."
 print(helloworld())
 
 
-input_name = input("Enter your name: ")
-print(f"Your name is {input_name}.. Right !!!")
+# input_name = input("Enter your name: ")
+# print(f"Your name is {input_name}.. Right !!!")
 
 
-first_name = input("Enter first name: ")
-last_name = input("Enter last name: ")
-full_name = f"Your full name is {last_name} {first_name} Right 😁 "
-print(full_name)
+# first_name = input("Enter first name: ")
+# last_name = input("Enter last name: ")
+# full_name = f"Your full name is {last_name} {first_name} Right 😁 "
+# print(full_name)
+
+# Type of arguments in python
+# Positional Arguments
+# Keyword Arguments
+# Default Arguments
+# Variable-length Arguments (*args) (non keyword variable arguments)
+# Variable-length Arguments (**kwargs) (keyword variable arguments)
+
+
+# Positional Arguments
+def greet(name, age):
+    print(f"Hello Friend,My name is {name},I am {age} years old.")
+
+
+greet("susu", 23)
