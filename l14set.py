@@ -92,3 +92,27 @@ print(set3 ^ set4)  # {1, 2, 4, 5, 7}
 print(set4 ^ set3)  # {1, 2, 4, 5, 7}
 print(set3.symmetric_difference(set4))  # {1, 2, 4, 5, 7}
 print(set4.symmetric_difference(set3))  # {1, 2, 4, 5, 7}
+
+
+# ==> set comprehension
+# {expression for item in iterable condition}
+
+squares = {x**2 for x in range(5)}
+print(squares)  # {0, 1, 4, 9, 16}
+
+evens = {x for x in range(10) if x % 2 == 0}
+print(evens)  # {0, 2, 4, 6, 8}
+
+uniquechars = {char for char in "Hello World"}
+print(uniquechars)  # {'H', ' ', 'o', 'd', 'l', 'W', 'e', 'r'}
+
+numbers = [1, 2, 2, 3, 4, 5, 7, 1, 2]
+unique_numbers = {x for x in numbers}
+print(unique_numbers)  # {1, 2, 3, 4, 5, 7}
+
+# ==> Nested Loops in set comprehension
+couplenums = {(x, y) for x in range(3) for y in range(2)}
+print(couplenums)  # {(0, 1), (2, 1), (0, 0), (1, 1), (2, 0), (1, 0)}
+
+
+""" print("hello world") """

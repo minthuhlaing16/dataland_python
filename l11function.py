@@ -144,3 +144,17 @@ def greet(name, age):
 
 
 greet("susu", 23)
+
+
+# Generator Function
+def genfun():
+    yield 1
+    yield 2
+    yield 3
+
+
+print(genfun())  # <generator object genfun at 0x7fa382a1a6c0>
+print(list(genfun()))  # [1, 2, 3]
+
+for value in genfun():
+    print(value)  # 1 2 3
