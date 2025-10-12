@@ -136,3 +136,24 @@ index = 0
 while index < len(paints):
     print(index, paints[index])
     index += 1
+
+
+# ==> break,continue
+# while True:
+#     username = input("Enter username: ")
+#     if username == "aung aung":
+#         print("Welcome Aung Aung..")
+#         break
+#     else:
+#         continue
+
+# ==> not , and
+initnum = False
+
+while not initnum:
+    lucky_number = input("Enter your lucky number: ")
+    if lucky_number.isdigit() and int(lucky_number) > 0:
+        print(f"Your lucky number is ==> {lucky_number}")
+        initnum = True
+    else:
+        print("Invalid Number...")

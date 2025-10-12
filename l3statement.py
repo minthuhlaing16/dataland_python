@@ -15,6 +15,11 @@
 # else:
 #     print("Bad Day")
 
+# Logical Operators
+# and
+# or
+# not
+
 
 x = 10
 
@@ -123,3 +128,25 @@ print("Init idx is: " + result)
 gamestatus = True
 gameresult = "Green Color" if gamestatus == True else "Red Color"
 print(gameresult)
+
+# Logical Operators
+# not
+user_name = "Aung Aung"
+password = "12345"
+# inputuser = input("Enter username: ")
+# inputpassword = input("Enter password: ")
+
+# if user_name == inputuser and password == inputpassword:
+#     print("Welcome admin...")
+# else:
+#     print("Try Again.")
+
+# if user_name == inputuser or password == inputpassword:
+#     print("hello Admin...")
+# else:
+#     print("Try Again...")
+
+has_car = False
+result = not has_car
+
+print(f"Result: {result}")

@@ -179,3 +179,50 @@ print(getdata)  # ChainMap({'name': 'aung kyaw'}, {'city': 'Mandalay'})
 
 print(getdata["name"])  # aung kyaw
 print(getdata["city"])  # Mandalay
+
+
+# ==> array (From array module)
+from array import array
+
+myarrs = array(
+    "i", [10, 20, 30, 40]
+)  # i for integer and b for boolean a twat bae tone mar
+
+print(myarrs)  # array('i', [10, 20, 30, 40])
+
+getlength = len(myarrs)
+print(getlength)  # 4
+
+print(myarrs[0])  # 10
+print(myarrs[2])  # 30
+
+myarrs.append(50)
+print(myarrs)  # array('i', [10, 20, 30, 40, 50])
+
+print(myarrs.index(50))  # 4
+print(myarrs.count(20))  # 1
+
+myarrs.insert(1, 100)
+print(myarrs)  # array('i', [10, 100, 20, 30, 40, 50])
+
+myarrs.remove(30)
+print(myarrs)  # array('i', [10, 100, 20, 40, 50])
+
+for value in myarrs:
+    print(value)
+
+myarrs.reverse()
+print(myarrs)  # array('i', [50, 40, 20, 100, 10])
+
+
+# ==> queue (from queue module)
+
+from queue import Queue
+
+qone = Queue(0)  # Queue(0) means that infinite size
+qone.put(100)
+qone.put(300)
+
+print(qone)  # <queue.Queue object at 0x7fe6fc3c1a90>
+print(qone.get())  # 100 get after remove data
+print(qone.get())  # 300 get after remove data
