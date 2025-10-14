@@ -78,9 +78,11 @@ set4 = {3, 4, 6, 5}
 
 # Union Combine (|) tuu tat har so override lote tal
 print(set3 | set4)
+print(set3.union(set4))
 
 # Intersection (&) tuu tat har bae yuu tar
 print(set3 & set4)
+print(set3.intersection(set4))
 
 # Difference (-)
 print(set3 - set4)
@@ -116,3 +118,7 @@ print(couplenums)  # {(0, 1), (2, 1), (0, 0), (1, 1), (2, 0), (1, 0)}
 
 
 """ print("hello world") """
+
+
+say_Hi = "Hello Friend"
+print(set(say_Hi))  # {'H', 'i', 'l', 'F', 'd', 'n', 'r', 'o', ' ', 'e'}

@@ -154,3 +154,19 @@ val1, val2 = greeting
 
 print(val1)
 print(val2)
+
+# list() , create a new list
+greeting = "hello sir how are you?"
+print(greeting)  # hello sir how are you?
+print(
+    list(greeting)
+)  # ['h', 'e', 'l', 'l', 'o', ' ', 's', 'i', 'r', ' ', 'h', 'o', 'w', ' ', 'a', 'r', 'e', ' ', 'y', 'o', 'u', '?']
+
+# zip(,) looping pat loa ya tat kg mhan ta mya(lists,tuples,string)
+arrone = ["10", "20", "30"]
+arrtwo = ["hi", "hello", "hay"]
+createzip = zip(arrone, arrtwo)
+print(createzip)  # <zip object at 0x7fdf986a3480>
+
+convert_to_list = list(createzip)
+print(convert_to_list)  # [('10', 'hi'), ('20', 'hello'), ('30', 'hay')]
