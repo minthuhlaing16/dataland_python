@@ -61,7 +61,7 @@ try:
         file.write(
             f"hello world My name is {name} and I am {age} years old mother fucker. \n"
         )
-except IOError as err:
-    print(f"IO Error : {err}")  # General case
+except Exception as err:
+    print(f"IO Error : {err}")  #! IOError/Exception ==> General case
 finally:
     print("Program Completed! Mother Fucker...")

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "John Doe",
+    "age": 23,
+    "isStudent": false,
+    "hasCar": true,
+    "hobbies": ["reading", "traveling"]
+  },
+  {
+    "name": "Aung Aung",
+    "age": 32,
+    "isStudent": true,
+    "hasCar": false,
+    "hobbies": ["running", "fighting"]
+  },
+  {
+    "name": "Susan",
+    "age": 12,
+    "isStudent": true,
+    "hasCar": false,
+    "hobbies": ["studying", "speaking"]
+  },
+  {
+    "name": "Mya Mya",
+    "age": 44,
+    "isStudent": false,
+    "hasCar": false,
+    "hobbies": ["lying", "chasing"]
+  }
+]
