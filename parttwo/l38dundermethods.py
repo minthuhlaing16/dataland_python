@@ -41,7 +41,10 @@ def main() -> None:  # ? function, outside of the class
 if __name__ == "__main__":
     main()
 
-    #  ==> __eq__
+    # todo ==> Object Comparison:
+    # ? __eq__ , equality
+    # ? __lt__ , less than
+    # ? __gt__ , greater than
 
     class Mobile:
         def __init__(self, brand: str, price: int, color: str) -> None:
@@ -59,9 +62,15 @@ if __name__ == "__main__":
             print("Other = ", other.__dict__)
             return self.__dict__ == other.__dict__
 
+        def __lt__(self, other: Self) -> bool:
+            return self.price < other.price
+
+        def __gt__(self, other: Self) -> bool:
+            return self.price > other.price
+
     def main() -> None:
-        mob1: Mobile = Mobile("Oppo", 300, "blue")
-        mob2: Mobile = Mobile("Oppo", 300, "blue")
+        mob1: Mobile = Mobile("Oppo", 400, "blue")
+        mob2: Mobile = Mobile("Oppo", 600, "blue")
 
         print(mob1)
         print(mob1.brand)
@@ -73,6 +82,75 @@ if __name__ == "__main__":
         print(mob2.price)
         print(mob2.color)
         print(mob1 == mob2)  # ? False before eq
+        print(mob1 < mob2)
+        print(mob1 > mob2)
+
+
+if __name__ == "__main__":
+    main()
+
+
+# ? __str__ , string
+# ? __repr__ , representation
+
+
+class Person:
+    def __init__(self, name: str, age: int) -> None:
+        self.name = name
+        self.age = age
+
+    # def __repr__(self) -> str:
+    def __str__(self) -> str:
+        return f"Name is {self.name}. {self.age} years old."
+
+
+def main() -> None:
+    personObj: Person = Person("Hnin Hnin", 23)
+    print(personObj)
+    print(repr(personObj))
+
+
+if __name__ == "__main__":
+    main()
+
+# ? ==> indexing
+# ? __getitem__
+
+
+class Worker:
+    def __init__(self, names):
+        self.names = names
+
+    def __getitem__(self, index):
+        return self.names[index]
+
+
+def main() -> None:
+    workerObj: Worker = Worker(["Aung Aung", "Tun Tun", "Kyaw Kyaw"])
+    print(workerObj[0])
+    print(workerObj[1])
+    print(workerObj[2])
+
+
+if __name__ == "__main__":
+    main()
+
+
+# ? ==> Deleting an Object
+# ? __del__
+
+
+class People:
+    def __init__(self, name: str):
+        self.name = name
+
+    def __del__(self):
+        print(f"{self.name} has been deleted.")
+
+
+def main() -> None:
+    peopleObj: People = People("lin Lin")
+    del peopleObj
 
 
 if __name__ == "__main__":
