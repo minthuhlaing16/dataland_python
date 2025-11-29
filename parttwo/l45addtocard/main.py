@@ -32,3 +32,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# ? app logic
+# ? Book
+# ? User
+# ? Original Price : 100 10%
+# ? After Discount Price : 90
+# ? Book Title : [, , ,]
+# ? book 1 pages : 10
+# ? book 2 pages : 15
+# ? book 3 pages : 14
+# ? User: SuSu, Card:["Story One by nu nu","Story Two by yu yu"]
+# ? Total Price : 90
