@@ -131,6 +131,42 @@ print(Student.describe("undergraduate"))
 print(GraduateStudent.describe("graduate"))
 
 
+class Vehicle:
+    vehicletype = "Unknown"
+
+    @classmethod
+    def describe(cls):
+        return f"This is a {cls.vehicletype} vehicle."
+
+
+class Car(Vehicle):
+    vehicletype = "Car"
+
+
+print(Car.describe())
+
+
+class ProLanguage:
+    langtype = "Generic Language"
+
+    @classmethod
+    def getlang(cls):
+        return f"This is {cls.langtype}"
+
+
+class JavaScript(ProLanguage):
+    langtype = "JavaScript"
+
+
+class Python(ProLanguage):
+    langtype = "Python"
+
+
+print(ProLanguage.getlang())
+print(JavaScript.getlang())
+print(Python.getlang())
+
+
 # todo ==> Define Read-Only Property (@property)
 
 
@@ -146,3 +182,25 @@ class Employee:
 
 employeeObj = Employee("Zaw Zaw", 500)
 print(employeeObj.annualsalary)
+
+# todo (@property with Getter and Setter)
+
+
+class Staff:
+    def __init__(self, name):
+        self._name = name
+
+    @property
+    def name(self):
+        return self._name.upper()
+
+    @name.setter
+    def name(self, newname):
+        self._name = newname
+
+
+staffObj = Staff("Yu Yu")
+print(staffObj.name)
+
+staffObj.name = "nu nu"
+print(staffObj.name)
